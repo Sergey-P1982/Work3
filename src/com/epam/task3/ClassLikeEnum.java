@@ -4,9 +4,9 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public abstract class ClassLikeEnum {
-    private int index = 0;
+    private int index;
 
-    protected final Map<String, Integer> demoEnum = new LinkedHashMap<>();
+    protected final static Map<String, Integer> demoEnum = new LinkedHashMap<>();
 
     public ClassLikeEnum(String... stringsArray) {
         for (String key : stringsArray) {
@@ -15,12 +15,16 @@ public abstract class ClassLikeEnum {
         }
 
     }
-    public final String name (String key) {
+    public final static String name (String key) {
         if (demoEnum.containsKey(key)) return key.toString();
         return null;
     }
 
-    public final int ordinal(String key) {
-        return demoEnum.get(key);
+    public final static int ordinal(String key) {
+        if (demoEnum.containsKey(key)) return demoEnum.get(key);
+        return -1;
+    }
+    public final static Map<String, Integer> valuesOf() {
+         return demoEnum;
     }
 }
