@@ -1,8 +1,8 @@
 package com.epam.task2.controller;
 
 import com.epam.task2.entities.Shop;
-import com.epam.task2.entities.ShopManager;
-import com.epam.task2.entities.view.ShopView;
+import com.epam.task2.model.ShopManager;
+import com.epam.task2.view.ShopView;
 
 import java.util.ArrayList;
 import java.util.List;

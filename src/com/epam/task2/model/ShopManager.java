@@ -1,4 +1,6 @@
-package com.epam.task2.entities;
+package com.epam.task2.model;
+
+import com.epam.task2.entities.Shop;
 
 import java.util.ArrayList;
 import java.util.Comparator;

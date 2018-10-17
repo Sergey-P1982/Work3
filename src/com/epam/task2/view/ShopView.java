@@ -1,4 +1,4 @@
-package com.epam.task2.entities.view;
+package com.epam.task2.view;
 
 import com.epam.task2.entities.Shop;
 
