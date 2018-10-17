@@ -39,7 +39,7 @@ public class ShopManager {
         temp.sort(new Comparator<Shop.Department>() {
             @Override
             public int compare(Shop.Department o1, Shop.Department o2) {
-                return o1.getWorkersNumber() - o2.getWorkersNumber();
+                return o1.getName().compareTo(o2.getName());
             }
         });
 

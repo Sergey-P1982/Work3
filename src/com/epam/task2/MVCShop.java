@@ -144,8 +144,8 @@ public class MVCShop {
 //        4
 //        Sorting departments by name:
 //        Department{D', productOrService='cleaning', workersNumber=3, locationFloor=3, area=50.0}
-//        Department{C', productOrService='storage', workersNumber=5, locationFloor=1, area=300.0}
 //        Department{A', productOrService='sales', workersNumber=10, locationFloor=1, area=100.0}
+//        Department{C', productOrService='storage', workersNumber=5, locationFloor=1, area=300.0}
 //        Back to menu? Y/N
 //        y
 //        Welcome to the shop menu:
