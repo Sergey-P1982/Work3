@@ -3,12 +3,14 @@ package com.epam.task3;
 public class EnumDemoRunner {
 
     public static void main(String[] args) {
+        new DemoEnum(DemoEnum.enumStrings);
         System.out.println(DemoEnum.valuesOf());
         System.out.println(DemoEnum.ordinal("MARCH"));
         System.out.println(DemoEnum.ordinal("MAY"));
         System.out.println(DemoEnum.ordinal("mAY"));
         System.out.println(DemoEnum.name("MAY"));
         System.out.println(DemoEnum.name("mAY"));
+
 
     }
 }

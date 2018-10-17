@@ -8,7 +8,7 @@ public abstract class ClassLikeEnum {
 
     protected final static Map<String, Integer> demoEnum = new LinkedHashMap<>();
 
-    public ClassLikeEnum(String... stringsArray) {
+    ClassLikeEnum(String... stringsArray) {
         for (String key : stringsArray) {
             demoEnum.put(key, index);
             index++;

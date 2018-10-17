@@ -2,13 +2,10 @@ package com.epam.task3;
 
 public class DemoEnum extends ClassLikeEnum {
 
-    private static final String[] enumDemo = {"JANUARY","FEBRUARY","MARCH", "APRIL", "MAY"};
-    static {
-        new DemoEnum(enumDemo);
-    }
+    public static final String[] enumStrings = {"JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY"};
 
-    private DemoEnum(String... enumDemo) {
-        super(enumDemo);
+    public DemoEnum(String... enumStrings) {
+        super(enumStrings);
     }
 }
 
