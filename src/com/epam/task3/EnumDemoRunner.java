@@ -4,9 +4,9 @@ public class EnumDemoRunner {
 
     public static void main(String[] args) {
 
-        DemoEnum demo = new DemoEnum();
+        DemoEnum demoEnum = new DemoEnum("JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY");
 
-        System.out.println(demo);
+        System.out.println(demoEnum);
         System.out.println(DemoEnum.values());
 
         System.out.println(DemoEnum.valueOf("APRIL"));
@@ -19,8 +19,10 @@ public class EnumDemoRunner {
         System.out.println(DemoEnum.name("MAY"));
         System.out.println(DemoEnum.name("mAY"));
 
+
     }
 }
+
 
 //OUTPUT:
 //        DemoEnum: Name=JANUARY, ordinal=0; Name=FEBRUARY, ordinal=1; Name=MARCH, ordinal=2; Name=APRIL, ordinal=3; Name=MAY, ordinal=4;
