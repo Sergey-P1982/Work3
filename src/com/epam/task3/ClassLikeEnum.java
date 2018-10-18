@@ -21,7 +21,7 @@ public abstract class ClassLikeEnum {
     }
 
     public final static String name(String name) {
-        if (demoEnum.containsKey(name)) return name.toString();
+        if (demoEnum.containsKey(name)) return name;
         return null;
     }
 
