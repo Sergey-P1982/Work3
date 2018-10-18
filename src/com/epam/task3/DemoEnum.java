@@ -1,11 +1,18 @@
 package com.epam.task3;
 
+import java.util.Arrays;
+
 public class DemoEnum extends ClassLikeEnum {
 
-    public static final String[] enumStrings = {"JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY"};
+    private static final String[] enumStrings = {"JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY"};
 
-    public DemoEnum(String... enumStrings) {
+    public DemoEnum() {
         super(enumStrings);
     }
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
 }
 
