@@ -4,7 +4,7 @@ public class EnumDemoRunner {
 
     public static void main(String[] args) {
 
-        DemoEnum demoEnum = new DemoEnum("JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY");
+        DemoEnum demoEnum = DemoEnum.getInstance("JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY");
 
         System.out.println(demoEnum);
         System.out.println(DemoEnum.values());
