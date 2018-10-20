@@ -1,36 +1,23 @@
 package com.epam.task3;
 
+import com.epam.task3.controller.Controller;
+
 public class EnumDemoRunner {
 
     public static void main(String[] args) {
 
-        DemoEnum demoEnum = DemoEnum.getInstance("JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY");
-
-        System.out.println(demoEnum);
-        System.out.println(DemoEnum.values());
-
-        System.out.println(DemoEnum.valueOf("APRIL"));
-        System.out.println(DemoEnum.valueOf("aPRIL"));
-
-        System.out.println(DemoEnum.ordinal("MARCH"));
-        System.out.println(DemoEnum.ordinal("MAY"));
-        System.out.println(DemoEnum.ordinal("mAY"));
-
-        System.out.println(DemoEnum.name("MAY"));
-        System.out.println(DemoEnum.name("mAY"));
-
+        new Controller().run();
 
     }
 }
 
 
 //OUTPUT:
-//        DemoEnum: Name=JANUARY, ordinal=0; Name=FEBRUARY, ordinal=1; Name=MARCH, ordinal=2; Name=APRIL, ordinal=3; Name=MAY, ordinal=4;
-//        [JANUARY, FEBRUARY, MARCH, APRIL, MAY]
-//        {APRIL=3}
-//        null
-//        2
-//        4
-//        -1
-//        MAY
-//        null
+//        All values of DemoEnum:
+//        [ClassLikeEnum: JANUARY, argument 31, ClassLikeEnum: FEBRUARY, argument 28, ClassLikeEnum: MARCH, argument 31,
+//                                                   ClassLikeEnum: APRIL, argument 30, ClassLikeEnum: MAY, argument 31]
+//        Value of 'APRIL': [ClassLikeEnum: APRIL, argument 30], ordinal = [3]
+//        Value of 'aPRIL': Enum with this name not found
+//        ClassLikeEnum: MAY, argument 31
+//        ClassLikeEnum: FEBRUARY, argument 28
+//        ClassLikeEnum: MARCH, argument 31, ordinal is 2
